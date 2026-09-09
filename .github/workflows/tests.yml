@@ -53,7 +53,7 @@ jobs:
             dataset: ds003392_base
             python: "3.13"
           - os: ubuntu-latest
-            dataset: ds003392_(otp|ff)
+            dataset: ds003392_otp
     env:
       MNE_BIDS_PIPELINE_LEGACY_WINDOWS: "false"
       PYTHONIOENCODING: 'utf8'  # for Windows
