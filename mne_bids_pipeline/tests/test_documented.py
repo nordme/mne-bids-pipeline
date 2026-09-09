@@ -197,6 +197,8 @@ def test_datasets_in_doc() -> None:
     # Rather than going circle_yaml['workflows']['commit']['jobs'] and
     # make sure everything is consistent there (too much work), let's at least
     # check that we get the correct number using `.count`.
+    # ↓↓↓↓ number of cache restores for each dataset
+    # ↓↓↓↓ (some datasets used with multiple configs)
     counts = dict(ERP_CORE=7, ds000248=6, ds003392=3)
     counts_noartifact = dict(ds000248=1)  # 1 is actually a test, not for docs
     for name in sorted(caches):

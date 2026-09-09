@@ -26,7 +26,7 @@ use_maxwell_filter = True
 mf_extra_kws = {"bad_condition": "warning"}
 ch_types = ["meg"]
 mf_esss = 1
-# translation args should be x, y, z as scaler (int or float ok)
+# translation args should be x, y, z as scalar (int or float)
 mf_destination = translation(z=0.04)
 
 mf_cal_missing = "warn"
